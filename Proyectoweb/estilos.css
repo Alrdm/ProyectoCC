@@ -265,3 +265,94 @@ a::before {
     padding: 10px;
 }
 
+/* clasicas */
+
+.clasicas{
+    
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* gap: 3.5em; */
+    flex-wrap: wrap;
+}
+
+.clasica_item{
+    background: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    padding-bottom: 3em;
+    flex-basis: 280px;
+
+}
+
+.clasica_contenido{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clasica_picture{
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 1.2em;
+    /* background: #030303; */
+    position: relative;
+    bottom: 2em;
+   
+    
+}
+
+
+.clasica_img{
+    width: 200px;
+}
+
+.clasica_titulo{
+    margin-bottom: 1em;
+}
+
+
+/* form */
+
+.form {
+    background-color: #444cf7;
+  
+}
+
+.tit{
+   font-size: 2rem;
+   text-align: center;
+   border: #e5e5f7 solid;
+
+
+}
+.subt{
+    text-align: center;
+    font-size: 25px;
+    
+    
+}
+
+.footer{
+    border: #e5e5f7 solid ;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    padding-bottom: 50px;
+}
+
+.formulario{
+    font-size: 19px;
+}
+
+.input{
+    background-color: aquamarine;
+}
+
+/* redes */
+
+.redes_titulo{
+    color: gray;
+}
