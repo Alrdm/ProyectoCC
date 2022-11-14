@@ -80,6 +80,8 @@ div.nav__logo img{
 .nav__links {
     color: black;
     text-decoration: none;
+    position: relative;
+    padding: 5px;
 }
 
 .nav__menu {
@@ -97,11 +99,8 @@ div.nav__logo img{
 .nav__close {
     display: var(--show, none);
 }
-a{
-    position: relative;
-    padding: 5px;
-}
-a::before {
+
+.nav__links::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -208,12 +207,13 @@ a::before {
 .about__main1 {
     padding-top: 10px;
     background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    display: grid;
+    
+     /* display: grid;
     width: 90%;
     margin: 0 auto;
     gap: 1em;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto)); */
  
     
   
@@ -238,6 +238,9 @@ a::before {
    
 }
 
+.iframe{
+    max-width: 500px;
+}
 /* .estrenos__icon {
     width: 200px;
 } */
@@ -255,11 +258,14 @@ a::before {
 }
 
 
+
 .imagen{
     width: 370px;
     
 }
 .caja{
+    /* width: 40%; */
+    /* border: black solid; */
 
     text-align:center;
     padding: 10px;
@@ -317,14 +323,15 @@ a::before {
 /* form */
 
 .form {
-    background-color: #444cf7;
+    background-color:#AED6F1 ;
+    padding-top: 1em;
   
 }
 
 .tit{
    font-size: 2rem;
    text-align: center;
-   border: #e5e5f7 solid;
+  
 
 
 }
@@ -336,23 +343,107 @@ a::before {
 }
 
 .footer{
-    border: #e5e5f7 solid ;
+    
     display: flex;
     justify-content: space-around;
     padding: 5px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
+    
 }
 
 .formulario{
     font-size: 19px;
+    
 }
 
-.input{
-    background-color: aquamarine;
+.tit_par{
+    border-bottom: black dashed;
 }
+
+/* .nombre{
+    border-radius: 1em;
+    border: solid black;
+    width: 300px;
+    
+} */
+
+input, select{
+
+    outline: 0;
+    border: 0;
+    /* position: relative; */
+    background: transparent;
+    /* display: block; */
+    width: 80%;
+    padding-top: 4em;
+    margin-top: 1em;
+    border-bottom: 2px solid cornflowerblue;
+    font-size:  16px;
+}
+
+
+
+
+
+input:focus, select:focus{
+    outline: none;
+    border-bottom: 2px solid gray;
+}
+
+label {
+    position: absolute;
+    padding-top: 1em;
+    
+    
+    
+    
+}
+
+.boton{
+    width: 80%;
+    border-radius: 1em;
+    background-color: #4c66db;
+    padding: 1em;
+    margin-top: 1em;
+    
+}
+
+
 
 /* redes */
 
+.redes{
+    padding-top: 60px;
+    text-align: center;
+}
+
 .redes_titulo{
     color: gray;
+    font-size: 30px;
+}
+
+.seguinos{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.fa-brands{
+    font-size: 25px;
+    padding-top: 5px;
+    
+    
+}
+
+.elementos{
+    
+
+    list-style: none;
+    border: 3px solid #4c66db;
+    margin-bottom: 1em;
+    border-radius: 3px;
 }
