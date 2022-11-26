@@ -119,6 +119,8 @@ div.nav__logo img{
   }
 
 
+
+
 /* Hero container */
 
 
@@ -129,14 +131,14 @@ div.nav__logo img{
     display: grid;
     grid-auto-rows: max-content;
     align-content: center;
-    gap: 1em;
-    padding-bottom: 100px;
     text-align: center;
-    
-    
+
+
+
 }
 
 .hero__title {
+   
     font-size: 3rem;
 }
 
@@ -149,7 +151,7 @@ div.nav__logo img{
 
 .about {
     text-align: center;
-    
+
 }
 
 
@@ -162,8 +164,8 @@ div.nav__logo img{
 
 .about__paragraph {
     line-height: 1.7;
-    
-   
+
+
 }
 
 .about__main {
@@ -175,9 +177,9 @@ div.nav__logo img{
     gap: 1em;
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
-    
-    
-  
+
+
+
 }
 
 
@@ -188,9 +190,7 @@ div.nav__logo img{
     width: 260px;
     overflow: hidden;
     margin: 0 auto;
-    
-    
-  
+
 }
 
 .about__icon {
@@ -207,21 +207,12 @@ div.nav__logo img{
 .about__main1 {
     padding-top: 10px;
     background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    
-     /* display: grid;
-    width: 90%;
-    margin: 0 auto;
-    gap: 1em;
-    overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto)); */
- 
-    
-  
+
 }
 
 .estrenos {
     text-align: center;
-    
+
 }
 
 
@@ -234,38 +225,33 @@ div.nav__logo img{
 
 .estrenos__paragraph {
     line-height: 1.7;
-    
-   
+
+
 }
 
 .iframe{
     max-width: 500px;
 }
-/* .estrenos__icon {
-    width: 200px;
-} */
+
 .grid{
     display: grid;
     grid-template-columns: 500px auto;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
-    /* grid-template-rows: 600px; */
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     box-sizing: border-box;
-    /* padding: var(--padding-container); */
+
 }
 
 
 
 .imagen{
     width: 370px;
-    
+
 }
 .caja{
-    /* width: 40%; */
-    /* border: black solid; */
 
     text-align:center;
     padding: 10px;
@@ -274,16 +260,14 @@ div.nav__logo img{
 /* clasicas */
 
 .clasicas{
-    
+
     width: 90%;
     margin: 0 auto;
     padding: 60px 0;
     max-width: 1200px;
     min-height: 100vh;
     display: flex;
-    /* align-items: center; */
     justify-content: space-evenly;
-    /* gap: 3.5em; */
     flex-wrap: wrap;
 }
 
@@ -303,11 +287,10 @@ div.nav__logo img{
     width: 90%;
     margin: 0 auto;
     padding-left: 1.2em;
-    /* background: #030303; */
     position: relative;
     bottom: 2em;
-   
-    
+
+
 }
 
 
@@ -325,88 +308,88 @@ div.nav__logo img{
 .form {
     background-color:#AED6F1 ;
     padding-top: 1em;
-  
+
 }
 
 .tit{
    font-size: 2rem;
    text-align: center;
-  
+
 
 
 }
 .subt{
     text-align: center;
     font-size: 25px;
-    
-    
+
+
 }
 
 .footer{
-    
+
     display: flex;
     justify-content: space-around;
     padding: 5px;
     padding-bottom: 50px;
     flex-wrap: wrap;
-    
+
 }
 
 .formulario{
     font-size: 19px;
-    
+
 }
 
 .tit_par{
-    border-bottom: black dashed;
+    border-bottom: cornflowerblue dashed;
 }
 
-/* .nombre{
-    border-radius: 1em;
-    border: solid black;
-    width: 300px;
-    
-} */
+input{
 
-input, select{
-
-    outline: 0;
-    border: 0;
-    /* position: relative; */
+    outline: none;
     background: transparent;
-    /* display: block; */
     width: 80%;
     padding-top: 4em;
     margin-top: 1em;
+    border:solid #aed6f1;
     border-bottom: 2px solid cornflowerblue;
     font-size:  16px;
 }
 
 
-
-
-
-input:focus, select:focus{
+input:focus{
     outline: none;
     border-bottom: 2px solid gray;
 }
 
 label {
+    outline: none;
     position: absolute;
     padding-top: 1em;
-    
-    
-    
-    
+
+}
+
+textarea{
+    background-color: #AED6F1;
+    padding-top: 1em;
+    margin-top: 1em;
+    border: 2px solid cornflowerblue;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+    border: 2px solid cornflowerblue;
 }
 
 .boton{
     width: 80%;
     border-radius: 1em;
+    border-color: #4c66db;
     background-color: #4c66db;
     padding: 1em;
     margin-top: 1em;
-    
+
 }
 
 
@@ -429,21 +412,22 @@ label {
     text-decoration: none;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
 .fa-brands{
     font-size: 25px;
     padding-top: 5px;
-    
-    
+
+
 }
 
 .elementos{
-    
+
 
     list-style: none;
     border: 3px solid #4c66db;
     margin-bottom: 1em;
     border-radius: 3px;
 }
+

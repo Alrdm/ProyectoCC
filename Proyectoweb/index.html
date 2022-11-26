@@ -20,16 +20,16 @@
 
         <ul class="nav__link nav__link--menu">
             <li class="nav__items">
-                <a  href=#vistas class="nav__links">Mas vistas</a>
+                <a  href=#vistas class="nav__links">Más vistas</a>
             </li>
             <li class="nav__items">
-                <a href=#criticadas class="nav__links">Mas criticadas</a>
+                <a href=#criticadas class="nav__links">Más criticadas</a>
             </li>
             <li class="nav__items">
-                <a href=#estrenos class="nav__links">Proximos estrenos</a>
+                <a href=#estrenos class="nav__links">Próximos estrenos</a>
             </li>
             <li class="nav__items">
-                <a href="#clasicas" class="nav__links">Cine clasico</a>
+                <a href="#clasicas" class="nav__links">Cine clásico</a>
             </li>
             <li class="nav__items">
                 <a href="#formulario" class="nav__links">Mantenete informado</a>
@@ -46,7 +46,7 @@
         
 
         <section class="hero__container container">
-            <h1 class="hero__title">Somos fanaticos de las pelis</h1>
+            <h1 class="hero__title">Somos fanáticos de las pelis</h1>
             <p class="hero__paragraph">Te mantenemos actualizado con las novedades del mundo del cine</p>
             
         </section>
@@ -55,8 +55,8 @@
     <main>
         <section class="container about">
             
-            <h2 id=vistas class="subtitle">Ranking de peliculas mas vistas</h2>
-            <p class="about__paragraph">Te traemos el top 3 de las peliculas con mas recaudacion del año</p>
+            <h2 id=vistas class="subtitle">Ranking de películas más vistas</h2>
+            <p class="about__paragraph">Te traemos el top 3 de las películas con más recaudación del año</p>
 
             <div class="about__main">
                 <article class="about__icons">
@@ -86,8 +86,8 @@
 
         <section class="container about">
             
-            <h2 id=criticadas class="subtitle">Ranking de peliculas mas criticadas</h2>
-            <p class="about__paragraph">Por distintas razones estas son las 3 peores peliculas del año. Te animas a verlas y dejarnos tu opinion?
+            <h2 id=criticadas class="subtitle">Ranking de películas más criticadas</h2>
+            <p class="about__paragraph">Por distintas razones éstas son las 3 peores películas del año. Te animas a verlas y dejarnos tu opinión?
             </p>
 
             <div class="about__main">
@@ -121,8 +121,8 @@
 
         <section class="container estrenos">
 
-            <h2 id= estrenos class="subtitle" > Proximos Estrenos </h2>
-            <p class="estrenos__paragraph">Te dejamos una lista con los proximos estrenos que tanto estas esperando!
+            <h2 id= estrenos class="subtitle" > Próximos Estrenos </h2>
+            <p class="estrenos__paragraph">Te dejamos una lista con los próximos estrenos que tanto estas esperando!
             </p>
 
             <section>
@@ -197,8 +197,8 @@
 
             <section class="container clasicas">
 
-            <h2 id= clasicas class="subtitle" > Clasicos del cine</h2>
-            <p class="estrenos__paragraph">Basandonos en resultados de la ultima encuesta que realizamos dejamos a continuacion el top 3 de las pelis mas clasicas!
+            <h2 id= clasicas class="subtitle" > Clásicos del cine</h2>
+            <p class="estrenos__paragraph">Basándonos en resultados de la última encuesta que realizamos dejamos a continuación el top 3 de las pelis mas clásicas!
             </p>
             <section class="clasicas">
                 
@@ -280,49 +280,40 @@
                     <h1>Te mantenemos informado!</h1>
                 </div>
                 <div class="subt">
-                    <p>Para que no te olvides de nosotros y siempre tengas la mejor informacion de las pelis que mas te gustan</p>
+                    <p>Para que no te olvides de nosotros y siempre tengas la mejor información de las pelis que más te gustan</p>
                 </div>
 
 <div class="footer">
  
  <div id="formulario" class="formulario">
     <p class="tit_par">Completa el formulario y te enviamos toda la información</p>
-<form>
+<form onsubmit="sendEmail(); reset(); return false; " >
     
 <label>Nombre:</label>
-<input class="nombre" placeholder="" type="text">
-<br>
-<label>Tipo de genero:</label>
-<select  name="Seleccione Genero" id-"subject">
-<option value=""> Drama </option>
-<option value= "" selected "selected">Comedia</option>
-<option value= "" selected "selected">Suspenso</option>
-<option value= "" selected "selected">Terror</option>
-<option value= "" selected "selected">Romance</option>
-<option value= "" selected "selected">Infantil</option>
-<option value= "" selected "selected">Fantastico</option>
-<option value= "" selected "selected">Acción</option>
-<option value= "" selected "selected">Ciencia Ficción</option>
-<option value= "" selected "selected">Belica</option>
-<option value= "" selected "selected">Musical</option>
-</select>
+<input class="nombre" placeholder="" type="text" id="nombre" required>
 <br>
 <label>Correo electrónico:</label>
-<input placeholder="" size="25" maxlength="50">
+<input placeholder="" type="email" size="25" maxlength="30" id="email" required>
 <br>
-<input class="boton" type="submit" value="Enviar">
-
+<textarea id="mensaje" placeholder="Dejanos tu mensaje o sugerencia!" cols="58" rows="6" required></textarea>
+<br>
+<input class="boton" type="submit"> </input>
+<p class="warnings" id="warnings"></p>
 <br> 
 </form>
 </div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
+
 
     <div class="redes">
 
         <p class="redes_titulo"><b>Seguinos en nuestras redes</b> </p>
         <ul class="">
-            <li class="elementos"><i class="fa-brands fa-square-instagram" style="color: violet;"></i><a class="seguinos" href="https://www.instagram.com"> Instagram</a></li>
-        <li class="elementos"><i class="fa-brands fa-twitter" style="color:cadetblue;" ></i> <a class="seguinos" href="https://www.twitter.com">Twitter</a></li>
-        <li class="elementos"><i class="fa-brands fa-square-facebook" style="color:blue;"></i><a class="seguinos" href="https://www.facebook.com">Facebook</a></li>
+            <li class="elementos"><i class="fa-brands fa-square-instagram" style="color: violet;"></i><a class="seguinos" href="https://www.instagram.com"> Cine_fanok</a></li>
+        <li class="elementos"><i class="fa-brands fa-twitter" style="color:cadetblue;" ></i> <a class="seguinos" href="https://www.twitter.com">Somos_cinefan</a></li>
+        <li class="elementos"><i class="fa-brands fa-square-facebook" style="color:blue;"></i><a class="seguinos" href="https://www.facebook.com">Cine fan</a></li>
         
         </ul>
     </div>
